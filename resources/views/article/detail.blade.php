@@ -22,7 +22,7 @@
                                 <a href="{{ route('get.list.article') }}" title="Bài viết">Bài viết</a>
                                 <span><i class="fa fa-angle-right"></i></span>
                             </li>
-                            <li class="category3"><span>{{ $articleDetail->a_name }}</span></li>
+                            <li class="category3"><span>{{ $articles->a_name }}</span></li>
                         </ul>
                     </div>
                 </div>
@@ -34,10 +34,10 @@
             <div class="row">
                 <div class="col-sm-9">
                     <div class="article_content" style="margin-bottom: 20px">
-                        <h1 style="text-align: center">{{ $articleDetail->a_name }}</h1>
+                        <h1 style="text-align: center">{{ $articles->a_name }}</h1>
                         <img src="{{ asset(pare_url_file($articleDetail->a_avatar)) }}" alt="" style="width: 600px;height: auto;display: block;margin: 0 auto;">
                         <div>
-                            {!! $articleDetail->a_content !!}
+                            {!! $articles->a_content !!}
                         </div>
                     </div>
                     <h4>Bài viết khác</h4>
