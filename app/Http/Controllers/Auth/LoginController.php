@@ -21,10 +21,12 @@ class LoginController extends Controller
     */
 
     use AuthenticatesUsers;
+    //get dang nhap
     public function getLogin()
     {
         return view('auth.login');
     }
+    //dang nhap
     public function postLogin(Request $request)
     {
         $credentials = $request->only('email','password');
