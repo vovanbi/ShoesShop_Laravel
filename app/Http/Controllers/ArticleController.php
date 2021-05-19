@@ -23,7 +23,7 @@ class ArticleController extends FrontendController
         $id = array_pop($arrayUrl);
         if($id)
         {
-            $articleDetail =Article::find($id);
+            $    =Article::find($id);
             $articles = Article::orderBy('id','DESC')->paginate(3);
             $articleHot = Article::where('a_hot',Article::HOT)->get();
 

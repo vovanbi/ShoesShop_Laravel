@@ -18,5 +18,11 @@ class DatabaseSeeder extends Seeder
             'password' => bcrypt('123'),
 
         ]);
+        \DB::table('admins')->insert([
+            'name' => 'Võ Văn Bi',
+            'email' => 'vbii.ued@gmail.com',
+            'password' => bcrypt('123'),
+
+        ]);
     }
 }
