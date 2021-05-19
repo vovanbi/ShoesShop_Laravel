@@ -12,6 +12,7 @@ class CategoryController extends FrontendController
     {
         parent::__construct();
     }
+    //get san pham theo dieu kien 
     public function getListProduct(Request $request)
     {
 

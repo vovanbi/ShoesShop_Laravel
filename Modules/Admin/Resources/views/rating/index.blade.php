@@ -26,7 +26,7 @@
                 @foreach($ratings as $rating)
                     <tr>
                         <td>{{ $rating->id }}</td>
-                        <td>{{ isset($rating->user->name) ? $rating->user->name : '[N\A]' }}</td>
+                        <td>{{ </td>
                         <td><a href="">{{ isset($rating->product->pro_name) ? $rating->product->pro_name : '[N\A]' }}</a></td>
                         <td>{{ $rating->ra_content }}</td>
                         <td>{{ $rating->ra_number }} <i style="color: #ff9705" class="fa fa-star"></i></td>

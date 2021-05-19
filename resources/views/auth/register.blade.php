@@ -23,13 +23,14 @@
             <div class="row">
                 <div class="col-md-6 col-xs-12">
                     <div class="customer-login my-account">
-                        <form method="post" class="login">
+                        <form method="post" class="login" id="form-1">
                             @csrf
                             <div class="form-fields">
                                 <h2>Đăng ký</h2>
                                 <p class="form-row form-row-wide">
                                     <label for="username">Họ tên <span class="required">*</span></label>
                                     <input type="text" class="input-text" name="name" id="name" value="">
+                                    <span class="form-message"></span>
                                 </p>
                                 <p class="form-row form-row-wide">
                                     <label for="username">Số điện thoại <span class="required">*</span></label>

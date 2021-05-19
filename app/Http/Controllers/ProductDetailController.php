@@ -14,7 +14,7 @@ class ProductDetailController extends FrontendController
     {
         parent::__construct();
     }
-
+    //chi tiet san pham
     public function productDetail(Request $request)
     {
         $url = $request->segment(2);
